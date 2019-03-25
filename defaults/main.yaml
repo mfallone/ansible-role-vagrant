@@ -1,0 +1,6 @@
+---
+# file: ansible-role-vagrant/defaults/main.yaml
+vagrant_version: "2.2.4"
+vagrant_pkg_temp_dir: "/tmp/"
+vagrant_pkg_temp_path: "{{ vagrant_pkg_temp_dir }}/vagrant_{{ vagrant_version }}.deb"
+vagrant_install_virtualbox: False

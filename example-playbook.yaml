@@ -1,0 +1,6 @@
+---
+# file: example.yaml
+# Example playbook to set up vagrant locally
+- hosts: localhost
+  roles:
+    - ansible-role-vagrant

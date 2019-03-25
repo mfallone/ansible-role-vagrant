@@ -1,0 +1,8 @@
+---
+# file: ansible-role-vagrant
+- name: Download Vagrant
+  get_url: url="{{ vagrant_pkg_url }}" dest="{{ vagrant_pkg_temp_path }}"
+
+- name: Install vagrant
+  apt: deb={{ vagrant_pkg_temp_path }}
+  become: yes
